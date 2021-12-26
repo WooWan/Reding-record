@@ -13,7 +13,8 @@ public class Theater {
         this.ticketSeller = ticketSeller;
     }
 
-    public void enter(Audience audience) {
+
+    public void enterV1(Audience audience) {
         if (audience.getBag().hasInvitation()) {
             Ticket ticket = ticketSeller.getTicketOffice().getTicket();
             audience.getBag().setTicket(ticket);
@@ -23,5 +24,9 @@ public class Theater {
             ticketSeller.getTicketOffice().plusAmount(ticket.getFee());
             audience.getBag().setTicket(ticket);
         }
+    }
+
+    public void enterV2(Audience audience) {
+        ticketSeller.sellToV3(audience);
     }
 }

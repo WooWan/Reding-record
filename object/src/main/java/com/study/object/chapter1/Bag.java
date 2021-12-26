@@ -26,11 +26,23 @@ public class Bag {
         return ticket != null;
     }
 
+    //private로 변경해서 외부에서 참조 못하게 해서 의존성 낮출수 있다(캡슐화)
     public void minusAmount(Long amount) {
         this.amount -= amount;
     }
 
-    public void plusAmount(Long amount) {
+    private void plusAmount(Long amount) {
         this.amount += amount;
+    }
+
+    public Long hold(Ticket ticket) {
+        if (hasInvitation()) {
+            setTicket(ticket);
+            return 0L;
+        }else{
+            setTicket(ticket);
+            minusAmount(ticket.getFee());
+            return ticket.getFee();
+        }
     }
 }

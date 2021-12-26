@@ -30,4 +30,7 @@ public class TicketOffice {
         this.amount += amount;
     }
 
+    public void sellTicketTo(Audience audience) {
+        plusAmount(audience.buy(getTicket()));
+    }
 }
