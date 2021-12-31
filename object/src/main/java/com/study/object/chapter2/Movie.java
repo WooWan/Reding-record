@@ -2,6 +2,7 @@ package com.study.object.chapter2;
 
 import com.study.object.chapter2.policy.DefaultDiscountPolicy;
 import com.study.object.chapter2.policy.DiscountPolicy;
+import com.study.object.chapter2.policy.PercentDiscountPolicy;
 
 import java.time.Duration;
 

@@ -1,9 +1,12 @@
-package com.study.object.chapter2;
+package com.study.object.chapter2.policyCodition;
+
+import com.study.object.chapter2.Screening;
+import com.study.object.chapter2.policyCodition.DiscountCondition;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
-public class PeriodCondition implements DiscountCondition{
+public class PeriodCondition implements DiscountCondition {
 
 //    요일
     private DayOfWeek dayOfWeek;

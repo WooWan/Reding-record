@@ -1,4 +1,7 @@
-package com.study.object.chapter2;
+package com.study.object.chapter2.policyCodition;
+
+import com.study.object.chapter2.Screening;
+import com.study.object.chapter2.policyCodition.DiscountCondition;
 
 public class SequenceCondition implements DiscountCondition {
 

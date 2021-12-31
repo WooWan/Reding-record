@@ -1,6 +1,6 @@
 package com.study.object.chapter2.policy;
 
-import com.study.object.chapter2.DiscountCondition;
+import com.study.object.chapter2.policyCodition.DiscountCondition;
 import com.study.object.chapter2.Money;
 import com.study.object.chapter2.Screening;
 
