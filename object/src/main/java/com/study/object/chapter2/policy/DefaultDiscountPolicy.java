@@ -18,8 +18,8 @@ public abstract class DefaultDiscountPolicy implements DiscountPolicy {
 
 
     public Money calculateDiscountAmount(Screening screening) {
-        for (DiscountCondition each : conditions) {
-            if (each.isSatisfiedBy(screening)) {
+        for (DiscountCondition condition : conditions) {
+            if (condition.isSatisfiedBy(screening)) {
                 return getDiscountAmount(screening);
             }
         }
